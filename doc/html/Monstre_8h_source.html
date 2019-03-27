@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Labyrinthe:  Fichier source de /home/laura-linux/Documents/labyrinthe/src/core/Monstre.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinthe
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Monstre.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Monstre_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _Monstre_H</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _Monstre_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Terrain_8h.html">Terrain.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classMonstre.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMonstre.html">Monstre</a> {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x,y;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> direction;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        </div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classMonstre.html">Monstre</a>();      </div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classMonstre.html">Monstre</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dimx, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dimy, <span class="keywordtype">int</span> dir);     </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ~<a class="code" href="classMonstre.html">Monstre</a>();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMonstre.html#ad8dd98270f412ec7892bb30422d4fdd2">getX</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMonstre.html#a6a2f85ad2f001963b4c7f7b29d0e213e">getY</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMonstre.html#a51ea1f6537114374d63287f421986a97">setX</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> dimx);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMonstre.html#a034e1b050372dc8ca93f8f34188251bc">setY</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> dimy);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMonstre.html#a809e1b04d0c5e050e153e4db6d2609dd">bougeAutoHorizontal</a>(<span class="keyword">const</span> <a class="code" href="classTerrain.html">Terrain</a> &amp; t);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMonstre.html#ab99b6b379a93081b3f8c2e1cf7ecf780">bougeAutoVertical</a>(<span class="keyword">const</span> <a class="code" href="classTerrain.html">Terrain</a> &amp; t);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        </div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        </div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        </div><div class="ttc" id="classMonstre_html_a51ea1f6537114374d63287f421986a97"><div class="ttname"><a href="classMonstre.html#a51ea1f6537114374d63287f421986a97">Monstre::setX</a></div><div class="ttdeci">void setX(const int dimx)</div><div class="ttdoc">Mutateur. </div><div class="ttdef"><b>Definition:</b> Monstre.cpp:22</div></div>
+<div class="ttc" id="classMonstre_html"><div class="ttname"><a href="classMonstre.html">Monstre</a></div><div class="ttdoc">Un monstre = sa position 2D et sa direction. </div><div class="ttdef"><b>Definition:</b> Monstre.h:15</div></div>
+<div class="ttc" id="classMonstre_html_a034e1b050372dc8ca93f8f34188251bc"><div class="ttname"><a href="classMonstre.html#a034e1b050372dc8ca93f8f34188251bc">Monstre::setY</a></div><div class="ttdeci">void setY(const int dimy)</div><div class="ttdoc">Mutateur. </div><div class="ttdef"><b>Definition:</b> Monstre.cpp:25</div></div>
+<div class="ttc" id="Terrain_8h_html"><div class="ttname"><a href="Terrain_8h.html">Terrain.h</a></div><div class="ttdoc">Module gérant un terrain dans l&amp;#39;application Labyrinthe Un terrain est un tableau 2D de caractères don...</div></div>
+<div class="ttc" id="classMonstre_html_ad8dd98270f412ec7892bb30422d4fdd2"><div class="ttname"><a href="classMonstre.html#ad8dd98270f412ec7892bb30422d4fdd2">Monstre::getX</a></div><div class="ttdeci">int getX() const </div><div class="ttdoc">Accesseur. </div><div class="ttdef"><b>Definition:</b> Monstre.cpp:16</div></div>
+<div class="ttc" id="classTerrain_html"><div class="ttname"><a href="classTerrain.html">Terrain</a></div><div class="ttdoc">La classe Terrain contient les dimensions du terrain et un tableau 2D de cases (une case = un caractè...</div><div class="ttdef"><b>Definition:</b> Terrain.h:14</div></div>
+<div class="ttc" id="classMonstre_html_a809e1b04d0c5e050e153e4db6d2609dd"><div class="ttname"><a href="classMonstre.html#a809e1b04d0c5e050e153e4db6d2609dd">Monstre::bougeAutoHorizontal</a></div><div class="ttdeci">void bougeAutoHorizontal(const Terrain &amp;t)</div><div class="ttdoc">Action automatique horizontal du monstre. </div><div class="ttdef"><b>Definition:</b> Monstre.cpp:36</div></div>
+<div class="ttc" id="classMonstre_html_a6a2f85ad2f001963b4c7f7b29d0e213e"><div class="ttname"><a href="classMonstre.html#a6a2f85ad2f001963b4c7f7b29d0e213e">Monstre::getY</a></div><div class="ttdeci">int getY() const </div><div class="ttdoc">Accesseur. </div><div class="ttdef"><b>Definition:</b> Monstre.cpp:19</div></div>
+<div class="ttc" id="classMonstre_html_ab99b6b379a93081b3f8c2e1cf7ecf780"><div class="ttname"><a href="classMonstre.html#ab99b6b379a93081b3f8c2e1cf7ecf780">Monstre::bougeAutoVertical</a></div><div class="ttdeci">void bougeAutoVertical(const Terrain &amp;t)</div><div class="ttdoc">Action automatique vertical du monstre. </div><div class="ttdef"><b>Definition:</b> Monstre.cpp:46</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

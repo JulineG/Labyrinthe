@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Labyrinthe:  Fichier source de /home/laura-linux/Documents/labyrinthe/src/core/Jeu.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Labyrinthe
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Jeu.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Jeu_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _JEU_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _JEU_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;Personnage.h&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Terrain_8h.html">Terrain.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Monstre_8h.html">Monstre.h</a>&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classJeu.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classJeu.html">Jeu</a> {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span> :</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classTerrain.html">Terrain</a> ter;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classPersonnage.html">Personnage</a> per;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classMonstre.html">Monstre</a> mon1;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classMonstre.html">Monstre</a> mon2;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classMonstre.html">Monstre</a> mon3;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> vie;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> nb_etoile;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> nb_jumelle;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> avoir_epee;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> avoir_perdu;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> avoir_gagne;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> jeu_termine;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> tuer;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span> :</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classJeu.html">Jeu</a> ();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">const</span> <a class="code" href="classTerrain.html">Terrain</a>&amp; <a class="code" href="classJeu.html#a5193012e985c12a0f8b591d1a3b29f11">getConstTerrain</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> <a class="code" href="classPersonnage.html">Personnage</a>&amp; <a class="code" href="classJeu.html#a3af8891335c3790539173c35cd8c9ba9">getConstPersonnage</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">const</span> <a class="code" href="classMonstre.html">Monstre</a>&amp; <a class="code" href="classJeu.html#ad237e3a9db02c6bd7fe42e9dff88dc91">getConstMonstre1</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">const</span> <a class="code" href="classMonstre.html">Monstre</a>&amp; <a class="code" href="classJeu.html#a5dc9290ccda551f23ddc3cb9884bb879">getConstMonstre2</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">const</span> <a class="code" href="classMonstre.html">Monstre</a>&amp; <a class="code" href="classJeu.html#adb6e5440aa3775b50736ff9a8346db61">getConstMonstre3</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classJeu.html#a89bbc5a64cb1defcbc9c59e5a80939dd">getVie</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classJeu.html#a17dc2d598c7fc105ea4646540fe5dbd2">getJumelle</a> ()<span class="keyword">const</span>;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classJeu.html#a830da1e4332eb9b7630e6c6362428ea0">getEtoile</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#aec4811c038b50a75065b5fcd66224c57">getAvoir_perdu</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#adc1d5df6832a4c40ec78be074436d68a">setAvoir_perdu</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> c);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#afee2740c8a07ecfa0b9803524e14d4bb">getAvoir_epee</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#a030b7c4073fd9e68b6a77b8eefa5e5c4">getJeu_termine</a> () <span class="keyword">const</span>;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#abc4b7fde50f3f89d7274293ef20a485e">setJeu_termine</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> c);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#ab8eac7dccc77eb4e1de358333400cf49">getTuer</a> () <span class="keyword">const</span>;  </div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classJeu.html#a849e140df1504ddfd1e1eccc4374718f">actionsAutomatiques</a> ();    </div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classJeu.html#ab27fb1db9e2ae2a0c19a90ecc838319f">actionClavier</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> touche); </div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#ae2d8535c27889594be9dc85ed1d954f9">gererPosition</a>();</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#ad572d9b14aa70ad3d9a12f7b9442e0e8">gererNbVie</a>();</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classJeu_html_ab27fb1db9e2ae2a0c19a90ecc838319f"><div class="ttname"><a href="classJeu.html#ab27fb1db9e2ae2a0c19a90ecc838319f">Jeu::actionClavier</a></div><div class="ttdeci">void actionClavier(const char touche)</div><div class="ttdoc">Action du jeu par rapport au clavier. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:86</div></div>
+<div class="ttc" id="classPersonnage_html"><div class="ttname"><a href="classPersonnage.html">Personnage</a></div><div class="ttdoc">Un personnage = sa position 2D initiale. </div><div class="ttdef"><b>Definition:</b> Personnage.h:10</div></div>
+<div class="ttc" id="classJeu_html_adc1d5df6832a4c40ec78be074436d68a"><div class="ttname"><a href="classJeu.html#adc1d5df6832a4c40ec78be074436d68a">Jeu::setAvoir_perdu</a></div><div class="ttdeci">void setAvoir_perdu(const bool c)</div><div class="ttdoc">Mutateur. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:55</div></div>
+<div class="ttc" id="classJeu_html_ab8eac7dccc77eb4e1de358333400cf49"><div class="ttname"><a href="classJeu.html#ab8eac7dccc77eb4e1de358333400cf49">Jeu::getTuer</a></div><div class="ttdeci">bool getTuer() const </div><div class="ttdoc">Booléen. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:75</div></div>
+<div class="ttc" id="classMonstre_html"><div class="ttname"><a href="classMonstre.html">Monstre</a></div><div class="ttdoc">Un monstre = sa position 2D et sa direction. </div><div class="ttdef"><b>Definition:</b> Monstre.h:15</div></div>
+<div class="ttc" id="classJeu_html_a030b7c4073fd9e68b6a77b8eefa5e5c4"><div class="ttname"><a href="classJeu.html#a030b7c4073fd9e68b6a77b8eefa5e5c4">Jeu::getJeu_termine</a></div><div class="ttdeci">bool getJeu_termine() const </div><div class="ttdoc">Booléen. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:59</div></div>
+<div class="ttc" id="classJeu_html_aec4811c038b50a75065b5fcd66224c57"><div class="ttname"><a href="classJeu.html#aec4811c038b50a75065b5fcd66224c57">Jeu::getAvoir_perdu</a></div><div class="ttdeci">bool getAvoir_perdu() const </div><div class="ttdoc">Booléen. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:51</div></div>
+<div class="ttc" id="Terrain_8h_html"><div class="ttname"><a href="Terrain_8h.html">Terrain.h</a></div><div class="ttdoc">Module gérant un terrain dans l&amp;#39;application Labyrinthe Un terrain est un tableau 2D de caractères don...</div></div>
+<div class="ttc" id="classJeu_html_a17dc2d598c7fc105ea4646540fe5dbd2"><div class="ttname"><a href="classJeu.html#a17dc2d598c7fc105ea4646540fe5dbd2">Jeu::getJumelle</a></div><div class="ttdeci">int getJumelle() const </div><div class="ttdoc">Accesseur. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:44</div></div>
+<div class="ttc" id="classJeu_html_a849e140df1504ddfd1e1eccc4374718f"><div class="ttname"><a href="classJeu.html#a849e140df1504ddfd1e1eccc4374718f">Jeu::actionsAutomatiques</a></div><div class="ttdeci">void actionsAutomatiques()</div><div class="ttdoc">Actions automatiques du jeu. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:80</div></div>
+<div class="ttc" id="classJeu_html_a89bbc5a64cb1defcbc9c59e5a80939dd"><div class="ttname"><a href="classJeu.html#a89bbc5a64cb1defcbc9c59e5a80939dd">Jeu::getVie</a></div><div class="ttdeci">int getVie() const </div><div class="ttdoc">Accesseur. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:47</div></div>
+<div class="ttc" id="classJeu_html_a830da1e4332eb9b7630e6c6362428ea0"><div class="ttname"><a href="classJeu.html#a830da1e4332eb9b7630e6c6362428ea0">Jeu::getEtoile</a></div><div class="ttdeci">int getEtoile() const </div><div class="ttdoc">Accesseur. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:71</div></div>
+<div class="ttc" id="classTerrain_html"><div class="ttname"><a href="classTerrain.html">Terrain</a></div><div class="ttdoc">La classe Terrain contient les dimensions du terrain et un tableau 2D de cases (une case = un caractè...</div><div class="ttdef"><b>Definition:</b> Terrain.h:14</div></div>
+<div class="ttc" id="classJeu_html_afee2740c8a07ecfa0b9803524e14d4bb"><div class="ttname"><a href="classJeu.html#afee2740c8a07ecfa0b9803524e14d4bb">Jeu::getAvoir_epee</a></div><div class="ttdeci">bool getAvoir_epee() const </div><div class="ttdoc">Accesseur. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:67</div></div>
+<div class="ttc" id="classJeu_html"><div class="ttname"><a href="classJeu.html">Jeu</a></div><div class="ttdoc">Un jeu (de labyrinthe) = un terrain, un personnage et des monstres. </div><div class="ttdef"><b>Definition:</b> Jeu.h:20</div></div>
+<div class="ttc" id="classJeu_html_ad572d9b14aa70ad3d9a12f7b9442e0e8"><div class="ttname"><a href="classJeu.html#ad572d9b14aa70ad3d9a12f7b9442e0e8">Jeu::gererNbVie</a></div><div class="ttdeci">void gererNbVie()</div><div class="ttdoc">Gère toutes les actions liées aux vies. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:154</div></div>
+<div class="ttc" id="classJeu_html_ae2d8535c27889594be9dc85ed1d954f9"><div class="ttname"><a href="classJeu.html#ae2d8535c27889594be9dc85ed1d954f9">Jeu::gererPosition</a></div><div class="ttdeci">void gererPosition()</div><div class="ttdoc">Comparaison de deux coordonnées (x,y) </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:106</div></div>
+<div class="ttc" id="classJeu_html_ad237e3a9db02c6bd7fe42e9dff88dc91"><div class="ttname"><a href="classJeu.html#ad237e3a9db02c6bd7fe42e9dff88dc91">Jeu::getConstMonstre1</a></div><div class="ttdeci">const Monstre &amp; getConstMonstre1() const </div><div class="ttdoc">Accesseur. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:27</div></div>
+<div class="ttc" id="classJeu_html_adb6e5440aa3775b50736ff9a8346db61"><div class="ttname"><a href="classJeu.html#adb6e5440aa3775b50736ff9a8346db61">Jeu::getConstMonstre3</a></div><div class="ttdeci">const Monstre &amp; getConstMonstre3() const </div><div class="ttdoc">Accesseur. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:35</div></div>
+<div class="ttc" id="classJeu_html_a5193012e985c12a0f8b591d1a3b29f11"><div class="ttname"><a href="classJeu.html#a5193012e985c12a0f8b591d1a3b29f11">Jeu::getConstTerrain</a></div><div class="ttdeci">const Terrain &amp; getConstTerrain() const </div><div class="ttdoc">Accesseur. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:23</div></div>
+<div class="ttc" id="classJeu_html_abc4b7fde50f3f89d7274293ef20a485e"><div class="ttname"><a href="classJeu.html#abc4b7fde50f3f89d7274293ef20a485e">Jeu::setJeu_termine</a></div><div class="ttdeci">void setJeu_termine(const bool c)</div><div class="ttdoc">Mutateur. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:63</div></div>
+<div class="ttc" id="classJeu_html_a3af8891335c3790539173c35cd8c9ba9"><div class="ttname"><a href="classJeu.html#a3af8891335c3790539173c35cd8c9ba9">Jeu::getConstPersonnage</a></div><div class="ttdeci">const Personnage &amp; getConstPersonnage() const </div><div class="ttdoc">Accesseur. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:40</div></div>
+<div class="ttc" id="Monstre_8h_html"><div class="ttname"><a href="Monstre_8h.html">Monstre.h</a></div><div class="ttdoc">Module gérant un monstre. </div></div>
+<div class="ttc" id="classJeu_html_a5dc9290ccda551f23ddc3cb9884bb879"><div class="ttname"><a href="classJeu.html#a5dc9290ccda551f23ddc3cb9884bb879">Jeu::getConstMonstre2</a></div><div class="ttdeci">const Monstre &amp; getConstMonstre2() const </div><div class="ttdoc">Accesseur. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

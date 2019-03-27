@@ -1,0 +1,7 @@
+<map id="/home/laura&#45;linux/Documents/labyrinthe/src/sdl2/menu.h" name="/home/laura&#45;linux/Documents/labyrinthe/src/sdl2/menu.h">
+<area shape="rect" id="node7" href="$SDLJeu_8h.html" title="Module qui gère l&#39;affichage du Jeu en SDL2. " alt="" coords="309,95,389,121"/>
+<area shape="rect" id="node8" href="$Jeu_8h.html" title="Module gérant un Jeu (de labyrinthe) " alt="" coords="665,169,760,196"/>
+<area shape="rect" id="node11" href="$Personnage_8h_source.html" title="Personnage.h" alt="" coords="751,244,853,271"/>
+<area shape="rect" id="node12" href="$Terrain_8h.html" title="Module gérant un terrain dans l&#39;application Labyrinthe Un terrain est un tableau 2D de caractères don..." alt="" coords="765,319,839,345"/>
+<area shape="rect" id="node13" href="$Monstre_8h.html" title="Module gérant un monstre. " alt="" coords="878,244,958,271"/>
+</map>
